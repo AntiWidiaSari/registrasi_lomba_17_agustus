@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title>Pendaftar Lomba 17 Agustus</ion-title>
+  </ion-toolbar>
+  <div class="gradient-bar"></div>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let item of agustusData">
+      <ion-icon name="person-circle-outline" slot="start"></ion-icon>
+      <ion-label>
+        <h2>{{ item.namalengkap }}</h2>
+        <p>
+          <ion-icon name="location-outline"></ion-icon>
+          Alamat: {{ item.alamat }}
+        </p>
+        <p>
+          <ion-icon name="calendar-outline"></ion-icon>
+          Usia: {{ item.usia }} Tahun
+        </p>
+        <p>
+          <ion-icon name="trophy-outline"></ion-icon>
+          Jenis Perlombaan: {{ item.jenisperlombaan }}
+        </p>
+        <p>
+          <ion-icon name="call-outline"></ion-icon>
+          Nomor WhatsApp: 0{{ item.nomorwhatsapp }}
+        </p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

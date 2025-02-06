@@ -1,0 +1,72 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title>Registrasi Lomba 17 Agustus</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <!-- Gambar Header -->
+  <div class="header-image">
+    <img src="assets/img/merdeka.jpeg" alt="17 Agustus" />
+  </div>
+
+  <h2 class="judul-lomba">Semarak Kemerdekaan!</h2>
+  <p class="deskripsi-lomba">Ayo daftarkan dirimu dalam perlombaan seru untuk merayakan Hari Kemerdekaan!</p>
+
+  <form (ngSubmit)="daftar()" class="form-container">
+
+    <!-- Input Nama Lengkap -->
+    <ion-item>
+      <ion-icon name="person-outline" slot="start" color="medium"></ion-icon>
+      <ion-label position="floating">Nama Lengkap</ion-label>
+      <ion-input [(ngModel)]="namalengkap" name="namalengkap" placeholder="Masukkan nama lengkap" required></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-icon name="calendar-outline" slot="start" color="medium"></ion-icon>
+      <ion-label position="floating">Usia</ion-label>
+      <ion-input [(ngModel)]="usia" name="usia" type="number" min="5" placeholder="Masukkan usia Anda" required></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-icon name="trophy-outline" slot="start" color="medium"></ion-icon>
+      <ion-label position="floating">Jenis Perlombaan</ion-label>
+      <ion-select [(ngModel)]="jenisperlombaan" name="jenisperlombaan" interface="popover" placeholder="Pilih lomba" required>
+        <ion-select-option value="Balap Karung">Balap Karung</ion-select-option>
+        <ion-select-option value="Panjat Pinang">Panjat Pinang</ion-select-option>
+        <ion-select-option value="Lomba Makan Kerupuk">Makan Kerupuk</ion-select-option>
+        <ion-select-option value="Tarik Tambang">Tarik Tambang</ion-select-option>
+        <ion-select-option value="Estafet Sarung">Estafet Sarung</ion-select-option>
+        <ion-select-option value="Gebuk Guling">Gebuk Guling</ion-select-option>
+        <ion-select-option value="Sepeda Hias">Sepeda Hias</ion-select-option>
+        <ion-select-option value="Paku Masuk Botol">Paku Masuk Botol</ion-select-option>
+        <ion-select-option value="Bawak Kelerang Pakai Sendok">Bawak Kelerang Pakai Sendok</ion-select-option>
+        <ion-select-option value="Memindahkan Belut">Memindahkan Belut</ion-select-option>
+        <ion-select-option value="Balap Egrang">Balap Egrang</ion-select-option>
+        <ion-select-option value="Joget Balon">Joget Balon</ion-select-option>
+        <ion-select-option value="Estafet Tepung">Estafet Tepung</ion-select-option>
+      </ion-select>
+    </ion-item>
+    
+    <ion-item>
+      <ion-icon name="call-outline" slot="start" color="medium"></ion-icon>
+      <ion-label position="floating">Nomor Whatsapp (08)</ion-label>
+      <ion-input [(ngModel)]="nomorwhatsapp" name="nomorwhatsapp" type="number" placeholder="Masukkan nomor whatsapp" required></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-icon name="location-outline" slot="start" color="medium"></ion-icon>
+      <ion-label position="floating">Alamat</ion-label>
+      <ion-textarea [(ngModel)]="alamat" name="alamat" placeholder="Masukkan alamat lengkap" required></ion-textarea>
+    </ion-item>
+    
+
+    <!-- Tombol Daftar -->
+    <ion-button expand="block" type="submit" color="danger" class="btn-daftar">
+      Daftar Sekarang
+    </ion-button>
+
+  </form>
+
+</ion-content>

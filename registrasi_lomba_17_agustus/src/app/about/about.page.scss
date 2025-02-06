@@ -1,0 +1,104 @@
+.about-container {
+  text-align: center;
+
+  .flag-image {
+    max-width: 100%;
+    width: 300px;     /* Ukuran lebar gambar, bisa sesuaikan */
+    height: auto;     /* Menjaga rasio tinggi gambar */
+    margin-bottom: 20px;
+  }
+
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin: 15px 0;
+  }
+
+  .quote {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 30px;
+  }
+
+  .sub-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #222;
+  }
+
+  /* Styling untuk card informasi tentang Kemerdekaan */
+  .info-card {
+    margin-top: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+    ion-card-header {
+      background-color: #ffffff;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }ionic build
+
+
+    ion-card-title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    ion-card-content {
+      padding: 20px;
+      text-align: left;
+      font-size: 16px;
+      color: #333;
+    }
+  }
+
+  /* Styling untuk card informasi kontak */
+  .contact-card {
+    margin-top: 40px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+    ion-card-header {
+      background-color: #ffffff;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+
+    ion-card-title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    ion-card-content {
+      padding: 20px;
+      text-align: left;
+      font-size: 16px;
+      color: #333;
+
+      a {
+        color: #1e90ff;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
